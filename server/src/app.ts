@@ -1,4 +1,6 @@
 import * as express from 'express';
+import { mountTestRoutes } from './routes';
+
 //based on https://blog.risingstack.com/building-a-node-js-app-with-typescript-tutorial/
 class App {
     public express;
@@ -17,7 +19,13 @@ class App {
             })
         });
 
+        mountTestRoutes(router);
+
         this.express.use('/', router);
+    }
+
+    private initAdmin(): void {
+        
     }
 }
 

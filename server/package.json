@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node src/server.ts",
     "build": "tsc -b",
-    "dev": "npm install && nodemon src/index.ts"
+    "dev": "nodemon src/index.ts"
   },
   "dependencies": {
     "express": "^4.16.3"
